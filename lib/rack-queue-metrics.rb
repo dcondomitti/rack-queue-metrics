@@ -1,4 +1,4 @@
 require 'queue-metrics/queue_time'
 require 'queue-metrics/queue_depth'
 require 'queue-metrics/app_time'
-require 'queue-metrics/railtie' if defined?(Rails)
+require 'queue-metrics/railtie' if defined?(Rails) && Rails.version >= '3.0'
